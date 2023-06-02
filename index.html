@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ERamen</title>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link rel="stylesheet" href="./assets/css/global.css" />
+		<!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+	</head>
+	<body>
+		<nav class="nav-container">
+			<a href="#" class="nav-item nav-active">Home</a
+			><a href="./pages/products.html" class="nav-item">Products</a
+			><a href="" class="nav-item">Promotions</a
+			><a href="" class="nav-item">About Us</a
+			><a href="" class="nav-item">Contact Us</a>
+		</nav>
+		<div class="news-container">
+			<div class="news"><h1>ERamen</h1></div>
+			<div class="news hidden">
+				<div class="news-text">
+					<h1 class="news-food-name">Prawn Sushi</h1>
+					<p class="news-food-price">Rp40.000,00</p>
+					<p class="news-food-description">
+						Our delicious prawn sushi is made with fresh, plump
+						prawns that have been cooked to perfection. Each bite is
+						a perfect combination of sweet, savory, and fresh
+						flavors.
+					</p>
+				</div>
+				<img
+					class="news-photo"
+					src="./assets/img/prawn-sushi.png"
+					alt="prawn sushi"
+				/>
+			</div>
+			<div class="news hidden">
+				<img
+					class="news-photo"
+					src="./assets/img/yokohama-ramen.png"
+					alt="yokohama ramen"
+				/>
+				<div class="news-text">
+					<h1 class="news-food-name">Yokohama Ramen</h1>
+					<p class="news-food-price">Rp30.000,00</p>
+					<p class="news-food-description">
+						This is a hearty and flavorful dish that is sure to
+						satisfy. Yokohama Ramen is made with a rich and
+						flavorful pork broth, chewy ramen noodles, topped with
+						pork belly, a soft-boiled egg, and narutomaki.
+					</p>
+				</div>
+			</div>
+			<div class="news hidden">
+				<img
+					class="news-photo"
+					src="./assets/img/yokohama-ramen.png"
+					alt="yokohama ramen"
+				/>
+				<div class="news-text">
+					<h1 class="news-food-name">Another content</h1>
+					<p class="news-food-price">Change this</p>
+					<p class="news-food-description">Waiting</p>
+				</div>
+			</div>
+			<div class="news hidden">
+				<img
+					class="news-photo"
+					src="./assets/img/yokohama-ramen.png"
+					alt="yokohama ramen"
+				/>
+				<div class="news-text">
+					<h1 class="news-food-name">Another 2 content</h1>
+					<p class="news-food-price">Change 2 this</p>
+					<p class="news-food-description">Waiting 2</p>
+				</div>
+			</div>
+			<div class="news hidden">
+				<img
+					class="news-photo"
+					src="./assets/img/yokohama-ramen.png"
+					alt="yokohama ramen"
+				/>
+				<div class="news-text">
+					<h1 class="news-food-name">Another 3 content</h1>
+					<p class="news-food-price">Change 3 this</p>
+					<p class="news-food-description">Waiting 3</p>
+				</div>
+			</div>
+			<div class="carousel">
+				<div class="progress-bar">
+					<svg
+						id="play-button"
+						xmlns="http://www.w3.org/2000/svg"
+						height="1em"
+						viewBox="0 0 384 512"
+					>
+						<path
+							d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+						/>
+					</svg>
+					<svg
+						id="pause-button"
+						class="hidden"
+						xmlns="http://www.w3.org/2000/svg"
+						height="1em"
+						viewBox="0 0 320 512"
+					>
+						<path
+							d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+						/>
+					</svg>
+					<div class="bar">
+						<div class="progress-fill"></div>
+					</div>
+					<svg
+						id="restart-button"
+						xmlns="http://www.w3.org/2000/svg"
+						height="1em"
+						viewBox="0 0 512 512"
+					>
+						<path
+							d="M0 224c0 17.7 14.3 32 32 32s32-14.3 32-32c0-53 43-96 96-96H320v32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9S320 19.1 320 32V64H160C71.6 64 0 135.6 0 224zm512 64c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 53-43 96-96 96H192V352c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V448H352c88.4 0 160-71.6 160-160z"
+						/>
+					</svg>
+				</div>
+				<div class="progress-directory">
+					<div class="directory">
+						<div class="progress-arrow"></div>
+						<div class="progress-breakpoint">New Sushi</div>
+					</div>
+					<div class="directory">
+						<div class="progress-arrow"></div>
+						<div class="progress-breakpoint">New Ramen</div>
+					</div>
+					<div class="directory">
+						<div class="progress-arrow"></div>
+						<div class="progress-breakpoint">May's Best</div>
+					</div>
+					<div class="directory">
+						<div class="progress-arrow"></div>
+						<div class="progress-breakpoint">Birthday Bonus</div>
+					</div>
+					<div class="directory">
+						<div class="progress-arrow"></div>
+						<div class="progress-breakpoint">Welcoming Summer</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer><h6>ERamen © 2023</h6></footer>
+		<script src="./assets/js/index.js"></script>
+	</body>
+</html>
