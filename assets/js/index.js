@@ -26,22 +26,25 @@ const navigateProgress = (active, hidden) => {
 // progress bar
 const playProgressBar = () => {
 	checkProgress();
-	if (progressWidth === 100) {
-		progressWidth = 0;
-		progress.style.transition = 'none';
-		progress.style.width = progressWidth + '%';
-		checkProgress();
-		toggleHidden(pause, play);
-	}
+	// if (progressWidth === 100) {
+	// 	// progressWidth = 0;
+	// 	progress.style.width = progressWidth + '%';
+	// 	checkProgress();
+	// 	toggleHidden(pause, play);
+	// }
 	clearInterval(interval);
 	toggleHidden(pause, play);
 	const frame = () => {
-		if (progressWidth >= 100) {
-			progressWidth = 100;
+		if (progressWidth === 100) {
+			progressWidth = 0;
 			toggleHidden(play, pause);
 			clearInterval(interval);
+			progress.style.transition = 'none';
+			progress.style.width = progressWidth + '%';
+			toggleHidden(news[0], news[5]);
 		} else {
 			progressWidth += 5;
+			progress.style.transition = 'width 1s linear';
 			progress.style.width = progressWidth + '%';
 			checkProgress();
 		}
@@ -81,6 +84,7 @@ const skipProgressTo = (i, position) => {
 	console.log(i, position);
 	progressWidth = position;
 	progress.style.width = progressWidth + '%';
+	progress.style.transition = 'none';
 	checkProgress();
 	playProgressBar();
 };

@@ -12,7 +12,21 @@
 body {
 	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
 	background-color: #13151e;
+}
+
+#linear-grad {
+	pointer-events: none;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0),
+		rgba(163, 120, 59)
+	);
+	opacity: 0.12;
 }
 
 svg {

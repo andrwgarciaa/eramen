@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: rgba(169, 169, 169, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: white;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.products-container {
+	width: 80vw;
+	height: 70vh;
+    border-radius: 25px;
+	overflow-y: scroll;
+}
+
+.products-container > img {
+    width: 300px;
+}
+
