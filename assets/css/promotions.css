@@ -12,10 +12,32 @@
 	width: 100vw;
 	display: flex;
 	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 .ads-item {
 	width: 100vw;
 	height: 40vh;
 	flex: 0 0 100vw;
+}
+
+.promo-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 40vh;
+}
+
+.promo-items {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.promo > img {
+	width: 10vw;
 }

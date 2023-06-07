@@ -1,0 +1,23 @@
+main {
+	width: 35vw;
+}
+.about {
+	display: flex;
+	gap: 2vw;
+}
+
+.about > img {
+	width: 10vw;
+}
+
+p {
+	text-align: justify;
+	font-weight: 300;
+	font-size: 0.9vw;
+	line-height: 1.5;
+}
+
+.vision {
+	font-size: 1.3vw;
+	font-weight: 600;
+}
