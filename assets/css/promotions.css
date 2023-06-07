@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+	height: 5px;
+	background-color: rgba(169, 169, 169, 0);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	background-color: white;
+}
+
+.ads-container {
+	width: 100vw;
+	display: flex;
+	overflow-x: scroll;
+}
+
+.ads-item {
+	width: 100vw;
+	height: 40vh;
+	flex: 0 0 100vw;
+}
