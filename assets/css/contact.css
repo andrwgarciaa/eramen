@@ -1,0 +1,97 @@
+.map-container {
+	margin-block: 1vw;
+}
+
+.map {
+	border-radius: 15px;
+	width: 50vw;
+	height: 40vh;
+}
+
+.map-address {
+	font-size: 0.7vw;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	font-size: 1vw;
+}
+
+.contact-container > i {
+	display: flex;
+	gap: 0.5em;
+	margin: 0.5em;
+}
+
+.form-container {
+	width: 50vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-container > * {
+	flex: 1;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	font-size: 1vw;
+}
+
+.form > * {
+	flex: 1;
+}
+
+.contact {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contact > p {
+	font-size: 2vw;
+	height: 100%;
+}
+
+.text-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-field > input {
+	color: #13151e;
+}
+
+.radio-field {
+	display: flex;
+	align-items: center;
+}
+
+.radio-field > input {
+	vertical-align: middle;
+	margin-left: 1vw;
+}
+
+.radio-field > label {
+    margin-block: 0.5vw;
+}
+
+.checkbox-field > input {
+    vertical-align: middle;
+}
+
+input[type='submit'] {
+	position: absolute;
+	padding: 0.5vw 1vw;
+	color: #13151e;
+	font-size: 1vw;
+	background-color: silver;
+	border-radius: 6px;
+	bottom: 0;
+	right: 0;
+}

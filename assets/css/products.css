@@ -1,28 +1,64 @@
 ::-webkit-scrollbar {
-    width: 3px;
-    background-color: rgba(169, 169, 169, 0.3);
+	width: 3px;
+	background-color: rgba(169, 169, 169, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    background-color: white;
+	border-radius: 6px;
+	background-color: white;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.products-container {
+.menu-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
 	width: 80vw;
 	height: 70vh;
-    border-radius: 25px;
+	border-radius: 25px;
+	overflow-x: hidden;
 	overflow-y: scroll;
 }
 
-.products-container > img {
-    width: 300px;
+.product-container {
+	margin: 0.5em;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 40vh;
+	display: flex;
+	align-items: center;
 }
 
+.product-detail {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.product-img {
+	width: 15vw;
+	/* height: 25vh; */
+}
+
+.product-name {
+	font-size: 2vw;
+	font-weight: 600;
+}
+
+.product-japanese-name {
+	font-size: 0.8vw;
+	color: #f89406;
+}
+
+.product-description {
+	font-weight: 300;
+	font-size: 1vw;
+	text-align: justify;
+}
+
+.product-price {
+	align-self: flex-end;
+	font-size: 1.3vw;
+}
+
+.product-category > img {
+	width: 1vw;
+}

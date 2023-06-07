@@ -1,6 +1,6 @@
 const play = document.querySelector('#play-button');
 const pause = document.querySelector('#pause-button');
-const restart = document.querySelector('#restart-button');
+const repeat = document.querySelector('#repeat-button');
 const progress = document.querySelector('.progress-fill');
 const breakpoint = document.querySelectorAll('.progress-breakpoint');
 const news = document.querySelectorAll('.news');
@@ -56,7 +56,7 @@ const pauseProgressBar = () => {
 	clearInterval(interval);
 };
 
-const restartProgressBar = () => {
+const repeatProgressBar = () => {
 	for (let i = 0; i < news.length; i++) {
 		if (i === 0) {
 			news[i].classList.add('active');
@@ -124,7 +124,7 @@ pause.addEventListener('click', () => {
 	toggleHidden(play, pause);
 });
 
-restart.addEventListener('click', restartProgressBar);
+repeat.addEventListener('click', repeatProgressBar);
 
 document.addEventListener('load', playProgressBar());
 

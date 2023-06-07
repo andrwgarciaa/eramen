@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ERamen | Contact Us</title>
+		<link rel="stylesheet" href="../assets/css/global.css" />
+		<link rel="stylesheet" href="../assets/css/contact.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<div id="linear-grad"></div>
+		<nav class="nav-container">
+			<a href="../index.html" class="nav-item">Home</a
+			><a href="./products.html" class="nav-item">Products</a
+			><a href="./promotions.html" class="nav-item">Promotions</a
+			><a href="./about.html" class="nav-item">About Us</a
+			><a href="#" class="nav-item nav-active">Contact Us</a>
+		</nav>
+		<div class="map-container">
+			<iframe
+				class="map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.311990640147!2d106.6465656748547!3d-6.2225290937654965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb20a9906e13%3A0xf75c5296d0a385e4!2sBinus%20University%20Kampus%20Alam%20Sutera!5e0!3m2!1sen!2sid!4v1685903633487!5m2!1sen!2sid"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+			<p class="map-address">
+				Jl. Jalur Sutera Bar. No.Kav. 21, RT.001/RW.004, Panunggangan,
+				Kec. Pinang, Kota Tangerang, Banten 15143
+			</p>
+		</div>
+		<div class="form-container">
+			<div class="contact">
+				<p>
+					Want to do reservation or simply talk with us?<br />Go
+					ahead!
+				</p>
+				<div class="contact-container">
+					<i class="fa-brands fa-instagram" style="color: #ffffff"
+						><p>eramen.id</p></i
+					>
+					<i class="fa-brands fa-twitter" style="color: #ffffff"
+						><p>eramen.id</p></i
+					>
+					<i class="fa-brands fa-facebook" style="color: #ffffff"
+						><p>ERamen Indonesia</p></i
+					>
+				</div>
+			</div>
+			<form class="form">
+				<div class="text-field">
+					<label for="name">Full Name</label>
+					<input id="name" type="text" name="name" /> <br />
+				</div>
+				<div class="text-field">
+					<label for="email">E-mail</label>
+					<input id="email" type="email" name="email" /> <br />
+				</div>
+				<div class="text-field">
+					<label for="phone">Phone Number</label>
+					<input id="phone" type="tel" name="phone" /> <br />
+				</div>
+				<div class="radio-field">
+					<p>Preferences:</p>
+					<input type="radio" name="preferences" id="ramen" />
+					<label for="ramen">Ramen</label>
+					<input type="radio" name="preferences" id="dry-ramen" />
+					<label for="dry-ramen">Dry Ramen</label>
+				</div>
+				<div class="checkbox-field">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Subscribe to newsletter</label>
+				</div>
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+
+		<footer><h6>ERamen © 2023</h6></footer>
+		<script src="../assets/js/contact.js"></script>
+	</body>
+</html>

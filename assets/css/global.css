@@ -10,6 +10,10 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -34,11 +38,11 @@ svg {
 }
 
 .active {
-	display: inherit;
+	display: inherit !important;
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .nav-container {
@@ -46,12 +50,13 @@ svg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2em;
+	gap: 2vw;
 }
 
 .nav-item {
 	font-weight: 300;
-	font-size: 1.3em;
+	font-size: 1.3vw;
+	cursor: pointer;
 }
 
 .nav-active {
@@ -67,4 +72,5 @@ footer {
 
 footer h6 {
 	font-weight: 300;
+	font-size: 0.7vw;
 }

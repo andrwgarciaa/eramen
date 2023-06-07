@@ -1,16 +1,8 @@
-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
 #pause-button,
 #play-button,
-#restart-button {
-	width: 20px;
-	height: 20px;
+#repeat-button {
 	cursor: pointer;
+	width: 12px;
 }
 
 .carousel {
@@ -25,7 +17,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 0.5rem;
+	margin-top: 1vw;
+	gap: 0.5vw;
 }
 
 .bar {
@@ -47,7 +40,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-size: 0.675rem;
+	font-size: 0.675vw;
 	font-weight: 300;
 }
 
@@ -63,11 +56,11 @@ body {
 	transition: all 0.2s ease-in;
 }
 
-.directory:hover > .progress-breakpoint{
+.directory:hover > .progress-breakpoint {
 	color: silver;
 }
 
-.directory:hover > .progress-arrow{
+.directory:hover > .progress-arrow {
 	background-color: silver;
 }
 
@@ -90,24 +83,31 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 70%;
-	height: 400px;
 	text-align: justify;
+	width: 70%;
+}
+
+.news > h1 {
+	display: inline-flex;
+	font-size: 2vw;
+	height: 50vh;
+	align-items: center;
+	justify-items: center;
 }
 
 .news-food-name {
-	font-size: 3rem;
+	font-size: 3vw;
 	font-weight: 500;
 }
 
 .news-food-price {
-	font-size: 1.5rem;
+	font-size: 1.5vw;
 	font-weight: 300;
 }
 
 .news-food-description {
 	margin-top: 1rem;
-	font-size: 1.25rem;
+	font-size: 1.25vw;
 	font-weight: 300;
 }
 
