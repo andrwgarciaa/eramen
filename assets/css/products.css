@@ -74,7 +74,7 @@
 
 .product-description {
 	font-weight: 300;
-	font-size: 1vw;
+	font-size: 0.9vw;
 	text-align: justify;
 }
 
@@ -95,12 +95,12 @@
 	position: absolute;
 	top: -1em;
 	left: -1em;
-	background-color: #f89406;
+	background-color: #f80606;
 	width: 8vw;
 	height: 8vw;
 	border-radius: 50%;
 	outline: 1px solid white;
-	outline-offset: -4px;
+	outline-offset: -0.3vw;
 }
 
 .promo-percentage {
@@ -112,6 +112,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 1vw;
 }
 
 .promo-price > span {

@@ -77,7 +77,6 @@ const skipProgressTo = (i, position) => {
 			return i.classList.contains('active');
 		})
 	);
-	console.log(i, position);
 	progressWidth = position;
 	progress.style.width = progressWidth + '%';
 	progress.style.transition = 'none';
@@ -123,4 +122,3 @@ pause.addEventListener('click', () => {
 repeat.addEventListener('click', repeatProgressBar);
 
 document.addEventListener('load', playProgressBar());
-

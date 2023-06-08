@@ -96,6 +96,10 @@
 	justify-items: center;
 }
 
+.news-text {
+	width: 60%;
+}
+
 .news-food-name {
 	font-size: 3vw;
 	font-weight: 500;
