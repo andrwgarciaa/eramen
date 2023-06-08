@@ -124,4 +124,3 @@ repeat.addEventListener('click', repeatProgressBar);
 
 document.addEventListener('load', playProgressBar());
 
-// check progress

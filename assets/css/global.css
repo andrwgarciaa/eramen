@@ -74,3 +74,13 @@ footer h6 {
 	font-weight: 300;
 	font-size: 0.7vw;
 }
+
+@media screen and (max-width: 768px) {
+	.nav-item {
+		font-size: 2vw;
+	}
+
+	.nav-active {
+		font-size: 4vw;
+	}
+}

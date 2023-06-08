@@ -5,7 +5,7 @@
 	width: 12px;
 }
 
-.carousel {
+.progress-container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -85,6 +85,7 @@
 	align-items: center;
 	text-align: justify;
 	width: 70%;
+	height: 50vh;
 }
 
 .news > h1 {
@@ -106,6 +107,7 @@
 }
 
 .news-food-description {
+	text-align: justify;
 	margin-top: 1rem;
 	font-size: 1.25vw;
 	font-weight: 300;
@@ -116,4 +118,42 @@
 	height: 50vh;
 	object-fit: contain;
 	pointer-events: none;
+}
+
+/* phone size */
+@media screen and (max-width: 768px) {
+	.bar {
+		width: 70vw;
+	}
+	.progress-directory {
+		width: 80vw;
+		font-size: 1.5vw;
+	}
+
+	.news {
+		width: 80vw;
+		flex-direction: column;
+	}
+	.news-photo {
+		order: -1;
+		object-fit: cover;
+		/* width: 30vw;
+		height: 30vw; */
+	}
+	.news > h1 {
+		font-size: 9vw;
+	}
+	.news-food-name {
+		font-size: 7vw;
+	}
+	.news-food-price {
+		font-size: 5vw;
+	}
+	.news-food-description {
+		font-size: 3.5vw;
+	}
+}
+
+/* tab size */
+@media screen and (max-width: 1008px) {
 }
