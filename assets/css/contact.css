@@ -104,6 +104,7 @@ input[type='submit'] {
 		display: flex;
 		flex-direction: column;
 		gap: 5vw;
+
 	}
 	.map {
 		width: 80vw;
