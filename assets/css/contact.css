@@ -15,6 +15,7 @@
 h1 {
 	font-size: 2vw;
 	width: 45%;
+	color: #f89406;
 }
 
 .contact-container {
@@ -93,7 +94,7 @@ input[type='submit'] {
 	padding: 0.5vw 1vw;
 	color: #13151e;
 	font-size: 1vw;
-	background-color: silver;
+	background-color: #f89406;
 	border-radius: 6px;
 	bottom: 0;
 	right: 0;
@@ -104,7 +105,6 @@ input[type='submit'] {
 		display: flex;
 		flex-direction: column;
 		gap: 5vw;
-
 	}
 	.map {
 		width: 80vw;

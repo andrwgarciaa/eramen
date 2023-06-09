@@ -59,6 +59,7 @@
 }
 
 .name {
+	font-size: 1.5vw;
 	font-weight: 500;
 	color: #a3783b;
 }
@@ -70,7 +71,8 @@
 .new-price {
 	font-size: 1.1vw;
 	font-weight: 700;
-	margin-top: 1vw;
+	margin-top: 0.3vw;
+	color: #a3783b;
 }
 
 .see-more {

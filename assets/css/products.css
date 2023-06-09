@@ -35,15 +35,15 @@ main {
 .filter-button {
 	font-size: 1vw;
 	font-weight: 300;
-	background-color: #f89406;
-	color: #13151e;
+	background-color: black;
+	color: white;
 	border-radius: 3px;
 	padding: 0.7vw 1vw;
 	cursor: pointer;
 }
 
 .filter-active {
-	background-color: white;
+	background-color: #f89406;
 }
 
 .product-container {

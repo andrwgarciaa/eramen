@@ -24,6 +24,7 @@ p {
 .vision {
 	font-size: 1.3vw;
 	font-weight: 600;
+	color: #f89406;
 }
 
 @media screen and (max-width: 1008px) {
