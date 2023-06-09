@@ -104,6 +104,16 @@ let products = [
 		image: '../assets/img/chicken-karaage.png',
 		category: ['chicken'],
 	},
+	{
+		type: 'beverages',
+		name: 'Matcha Tea',
+		japanese_name: '抹茶',
+		price: 'Rp15.000,00',
+		description:
+			'Sip slowly and savor the earthy notes and subtle sweetness, as the finely ground green tea leaves whisked to perfection offer a moment of tranquility and a rejuvenating taste of traditional Japanese tea culture.',
+		image: '../assets/img/matcha-tea.png',
+		category: [],
+	},
 ];
 
 products.sort((a, b) =>
@@ -116,6 +126,7 @@ const allMenuButton = document.querySelector('.all-menu-button');
 const promoButton = document.querySelector('.promo-button');
 const ramenButton = document.querySelector('.ramen-button');
 const sideDishesButton = document.querySelector('.side-dishes-button');
+const beveragesButton = document.querySelector('.beverages-button');
 
 const removeOldProducts = () => {
 	let oldItems = document.querySelectorAll('.product-container');
@@ -220,12 +231,31 @@ const showSideDishes = () => {
 	sideDishesButton.classList.add('filter-active');
 };
 
-document.addEventListener('load', showProducts(products));
+const showBeverages = () => {
+	removeOldProducts();
+	let beverages = products.filter((i) => {
+		return i.type === 'beverages';
+	});
+	showProducts(beverages);
+	removeActives();
+	beveragesButton.classList.add('filter-active');
+};
+
+const checkPromoRedirect = () => {
+	const urlParams = new URLSearchParams(window.location.search);
+	if (urlParams.get('filter') === 'promo') {
+		return true;
+	}
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+	if (checkPromoRedirect()) {
+		showPromo();
+	} else showProducts(products);
+});
 
 allMenuButton.addEventListener('click', () => showProducts(products));
-
 promoButton.addEventListener('click', showPromo);
-
 ramenButton.addEventListener('click', showRamen);
-
 sideDishesButton.addEventListener('click', showSideDishes);
+beveragesButton.addEventListener('click', showBeverages);

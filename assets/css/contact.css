@@ -99,7 +99,7 @@ input[type='submit'] {
 	right: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1008px) {
 	main {
 		display: flex;
 		flex-direction: column;
@@ -118,7 +118,7 @@ input[type='submit'] {
 	}
 
 	.contact-container {
-		width: 70vw;
+		width: 80vw;
 		gap: 5vw;
 	}
 
@@ -142,7 +142,10 @@ input[type='submit'] {
 	}
 
 	.form {
-		width: 50%;
+		font-size: 3vw;
+	}
+
+	input[type='submit'] {
 		font-size: 3vw;
 	}
 }

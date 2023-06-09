@@ -124,40 +124,73 @@
 	pointer-events: none;
 }
 
-/* phone size */
-@media screen and (max-width: 768px) {
+#nagasaki {
+	width: 25vw;
+	margin-right: 5vw;
+}
+
+/* tab size */
+@media screen and (max-width: 1008px) {
 	.bar {
-		width: 70vw;
+		width: 80vw;
 	}
 	.progress-directory {
-		width: 80vw;
+		width: 90vw;
 		font-size: 1.5vw;
 	}
 
 	.news {
 		width: 80vw;
+		height: 60vh;
 		flex-direction: column;
 	}
 	.news-photo {
 		order: -1;
-		object-fit: cover;
-		/* width: 30vw;
-		height: 30vw; */
+		width: 70vh;
+		height: 40vh;
+	}
+	#nagasaki {
+		width: 50vw;
+		margin-right: 0;
+	}
+	.news-text {
+		width: 100%;
 	}
 	.news > h1 {
-		font-size: 9vw;
-	}
-	.news-food-name {
-		font-size: 7vw;
-	}
-	.news-food-price {
 		font-size: 5vw;
 	}
+	.news-food-name {
+		font-size: 5vw;
+	}
+	.news-food-price {
+		font-size: 3vw;
+	}
 	.news-food-description {
-		font-size: 3.5vw;
+		font-size: 2.5vw;
 	}
 }
 
-/* tab size */
-@media screen and (max-width: 1008px) {
+/* phone size */
+@media screen and (max-width: 767px) {
+	.news {
+		width: 80vw;
+		height: 50vh;
+		flex-direction: column;
+	}
+	.news-photo {
+		width: 40vh;
+		height: 30vh;
+	}
+	.news > h1 {
+		font-size: 5vw;
+	}
+	.news-food-name {
+		font-size: 5vw;
+	}
+	.news-food-price {
+		font-size: 3vw;
+	}
+	.news-food-description {
+		font-size: 2.5vw;
+	}
 }

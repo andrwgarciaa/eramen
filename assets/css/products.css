@@ -125,11 +125,29 @@ main {
 	font-size: 0.8vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1008px) {
 	::-webkit-scrollbar {
 		display: none;
 	}
 
+	.menu-container {
+		width: 90vw;
+	}
+
+	.product-container {
+		height: 20vh;
+		width: 40vw;
+		padding: 2vw;
+	}
+	.filter {
+		left: 0;
+	}
+	.filter-button {
+		font-size: 1.5vw;
+	}
+}
+
+@media screen and (max-width: 767px) {
 	.menu-container {
 		display: flex;
 		flex-direction: column;
@@ -142,12 +160,14 @@ main {
 
 	.filter {
 		bottom: 5%;
+		left: 8%;
 	}
 	.filter-button {
 		padding: 1vw 1vw;
 	}
 
 	.product-container {
+		width: 90vw;
 		min-height: 25vh;
 		max-height: 25vh;
 	}

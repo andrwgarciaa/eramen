@@ -79,7 +79,7 @@ footer h6 {
 	font-size: 0.7vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1008px) {
 	body {
 		display: flex;
 	}
