@@ -12,23 +12,38 @@
 	font-size: 0.7vw;
 }
 
-.contact-container {
-	display: flex;
-	flex-direction: column;
-	font-size: 1vw;
+h1 {
+	font-size: 2vw;
+	width: 45%;
 }
 
-.contact-container > i {
+.contact-container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 50vw;
+}
+
+.contacts {
+	position: absolute;
+	display: flex;
+	bottom: 0;
+	flex-direction: column;
+	font-size: 1vw;
+	width: 50%;
+}
+
+.contacts > i {
 	display: flex;
 	gap: 0.5em;
 	margin: 0.5em;
 }
 
 .form-container {
-	width: 50vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 55%;
 }
 
 .form-container > * {
@@ -44,18 +59,6 @@
 
 .form > * {
 	flex: 1;
-}
-
-.contact {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.contact > p {
-	font-size: 2vw;
-	height: 100%;
 }
 
 .text-field {
@@ -78,11 +81,11 @@
 }
 
 .radio-field > label {
-    margin-block: 0.5vw;
+	margin-block: 0.5vw;
 }
 
 .checkbox-field > input {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 input[type='submit'] {
@@ -94,4 +97,52 @@ input[type='submit'] {
 	border-radius: 6px;
 	bottom: 0;
 	right: 0;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 5vw;
+	}
+	.map {
+		width: 80vw;
+		height: 20vh;
+	}
+	.map-container {
+		order: 1;
+	}
+
+	.map-address {
+		font-size: 1.5vw;
+	}
+
+	.contact-container {
+		width: 70vw;
+		gap: 5vw;
+	}
+
+	.contacts {
+		position: relative;
+		width: 100%;
+		font-size: 2vw;
+	}
+
+	h1 {
+		font-size: 7vw;
+		width: 100%;
+	}
+
+	.form-container {
+		width: 100%;
+	}
+
+	.contacts {
+		flex-direction: row;
+	}
+
+	.form {
+		width: 50%;
+		font-size: 3vw;
+	}
 }

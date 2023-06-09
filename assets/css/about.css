@@ -1,4 +1,8 @@
 main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 35vw;
 }
 .about {
@@ -20,4 +24,29 @@ p {
 .vision {
 	font-size: 1.3vw;
 	font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		width: 100vw;
+	}
+	.about {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.about > img {
+		order: 1;
+		width: 80%;
+	}
+
+	p {
+		width: 80%;
+		font-size: 2.5vw;
+	}
+
+	.vision {
+		font-size: 4vw;
+	}
 }

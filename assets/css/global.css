@@ -12,7 +12,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
@@ -46,11 +46,13 @@ svg {
 }
 
 .nav-container {
-	height: 10vh;
+	position: absolute;
+	top: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 2vw;
+	height: 10vh;
 }
 
 .nav-item {
@@ -65,9 +67,11 @@ svg {
 }
 
 footer {
-	height: 10vh;
+	position: absolute;
+	bottom: 0;
 	display: flex;
 	align-items: center;
+	height: 10vh;
 }
 
 footer h6 {
@@ -76,11 +80,24 @@ footer h6 {
 }
 
 @media screen and (max-width: 768px) {
+	body {
+		display: flex;
+	}
+	.nav-container {
+		height: 5vh;
+	}
 	.nav-item {
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 
 	.nav-active {
 		font-size: 4vw;
+	}
+
+	footer {
+		height: 10vh;
+	}
+	footer h6 {
+		font-size: 2vw;
 	}
 }
