@@ -92,7 +92,6 @@
 
 .news > h1 {
 	display: inline-flex;
-	text-align: left;
 	font-size: 2vw;
 	height: 50vh;
 	align-items: center;
@@ -104,6 +103,7 @@
 }
 
 .news-food-name {
+	text-align: left;
 	font-size: 3vw;
 	font-weight: 500;
 }
