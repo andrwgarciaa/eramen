@@ -90,6 +90,7 @@ h1 {
 }
 
 input[type='submit'] {
+	cursor: pointer;
 	position: absolute;
 	padding: 0.5vw 1vw;
 	color: #13151e;
